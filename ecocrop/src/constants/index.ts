@@ -1,0 +1,1 @@
+export const Genders = ["MALE", "FEMALE", "OTHERS", "PREFER NOT TO SAY"]
