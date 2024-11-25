@@ -26,7 +26,7 @@ const productData = [
     measurement: "kg",
     supplier: "Antika Farms",
     price: 10.00,
-    imageURL: "/assets/rice.jpg"
+    imageURL: "/assets/cassava-roots-sliced.jpg"
   },
   {
     id: 3,
@@ -55,6 +55,24 @@ const productData = [
     price: 12.5,
     imageURL: "/assets/rice1.jpg"
   },
+  {
+    id: 6,
+    name: "Brown Eggs",
+    quantity: 20,
+    measurement: "crates",
+    supplier: "Majesty Farms",
+    price: 12.5,
+    imageURL: "/assets/eggs.jpg"
+  },
+  {
+    id: 7,
+    name: "Sweet Potatoes",
+    quantity: 250,
+    measurement: "kg",
+    supplier: "Majesty Farms",
+    price: 12.5,
+    imageURL: "/assets/potatoes-basket.jpg"
+  },
 ]
 
 const Products = () => {
@@ -65,7 +83,7 @@ const Products = () => {
       <div className="mb-6">
         <div className="flex items-center border-2 border-gray-200 rounded">
           <SearchIcon className="w-5 h-5 text-gray-500 m-2" />
-          <input className="w-full py-4 px-2 rounded bg-white" placeholder="Search Products" value={searchItem} onChange={(e) => setSearchItem(e.target.value)} />
+          <input className="w-full py-4 px-2 rounded bg-white outline-none" placeholder="Search Products" value={searchItem} onChange={(e) => setSearchItem(e.target.value)} />
         </div>
         <div className="flex justify-between items-center mb-6 pt-3">
           <Header name="Products"/>
