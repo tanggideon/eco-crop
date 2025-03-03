@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import CustomFormField from "../(components)/customformfield";
 import { UserFormValidation } from "@/lib/validation";
 import SubmitButton from "../(components)/submitbutton";
+import { X } from "lucide-react";
 
 export enum FormFieldType {
   INPUT = "input",
@@ -61,7 +62,12 @@ const CreateProductModal = ({ isOpen, onClose }: CreateProductProps) => {
   return (
     <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-20 p-20">
       <div className="relative top-20 mx-auto border w-96 xl:w-[1024px] shadow-lg rounded-md bg-white p-10">
-        <Header name="Create New Product" />
+        <div className="flex items-center justify-between my-3">
+          <Header name="Create New Product" />
+          <Button className="shadow-none bg-transparent outline-none hover:bg-green-100" onClick={onClose}>
+            <X className="w-[25px] h-[25px]" />
+          </Button>
+        </div>
         <hr />
         <Form {...form}>
           <form

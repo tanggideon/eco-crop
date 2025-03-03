@@ -66,3 +66,36 @@ export const mockDataNotification = [
     requestResponse: "Pending",
   },
 ]
+
+export const mockProductData =[
+  {
+    id: "1",
+    name: "Fresh Tomatoes",
+    measurement: "kg",
+    quantity: 240
+  },
+  {
+    id: "2",
+    name: "Fresh Peppers",
+    measurement: "kg",
+    quantity: 240
+  },
+  {
+    id: "3",
+    name: "Fresh Cucumber",
+    measurement: "kg",
+    quantity: 240
+  },
+  {
+    id: "4",
+    name: "Yellow Corn",
+    measurement: "kg",
+    quantity: 240
+  },
+  {
+    id: "5",
+    name: "Dried Groundnuts",
+    measurement: "kg",
+    quantity: 240
+  },
+]
